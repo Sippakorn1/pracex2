@@ -1,3 +1,8 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<cstdlib>
+
 using namespace std;
 
 void sort(float x[], int N){
@@ -15,9 +20,21 @@ void sort(float x[], int N){
 }
 
 int main(){
-	
-	//Write your code here
-	
+	int i=0;
+	float y,a;
+	float x[20];
+	ifstream source("score1.txt");
+	string line;
+	ofstream dest("result.txt");
+	while(getline(source,line)){
+	dest << i+1 << " : "; 
+	y = atof(line.c_str());
+	x[i]=y;
+	sort(x[i],20);
+	dest << x[i] << "\n";
+	i++;
+	}
 	return 0;
+	dest.close();
 }
 
