@@ -41,5 +41,4 @@ double sg(double x,double y){
         double b=sqrt(x*y),c=sg(x,b)+sg(y,b);
         return c;
     }
-   
 }   
