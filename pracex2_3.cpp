@@ -31,7 +31,6 @@ void randomTable(){
 		for(int j = 0; j < 8; j++){
 		char x =('A'+rand()%26);
 		cout <<  x <<" ";
-		
 		}
 		cout << "\n";
 	 }
